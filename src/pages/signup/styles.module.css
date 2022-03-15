@@ -1,0 +1,26 @@
+.signUpWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e3e6ee;
+}
+
+.signUpWrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpWrapper label {
+  font-weight: 600;
+}
+
+.signUpWrapper p {
+  font-size: 0.8rem;
+}
+
+.signUpWrapper a {
+  color: #3598db;
+}
