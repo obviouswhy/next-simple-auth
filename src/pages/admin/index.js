@@ -2,8 +2,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "./styles.module.css";
 import useAuth from "../../providers/AuthProvider";
+import useProtectedRoute from "../../hooks/useProtectedRoute";
 
-export default function Admin() {
+function Admin() {
   const router = useRouter();
   const { handleLogout } = useAuth();
 
@@ -27,3 +28,6 @@ export default function Admin() {
     </div>
   );
 }
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+export default useProtectedRoute(Admin);
